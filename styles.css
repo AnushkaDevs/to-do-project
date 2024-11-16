@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.app-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #f76c6c;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-section button {
+    padding: 10px;
+    background-color: #f76c6c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #fc4a4a;
+}
+
+.tasks-section h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+.tasks-section ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.tasks-section li {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks-section li span {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.tasks-section li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.complete-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Scrollbar Styling */
+.tasks-section ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tasks-section ul::-webkit-scrollbar-thumb {
+    background-color: #f76c6c;
+    border-radius: 10px;
+}
+
+.tasks-section ul::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.tasks-section li button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tasks-section li button:hover {
+    transform: scale(1.1);
+}
+.tasks-section li {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Task Text Style */
+.tasks-section li span {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+}
+/* Date and Time Style */
+.tasks-section li .date-time {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #777;
+    margin-left: 10px;
+}
